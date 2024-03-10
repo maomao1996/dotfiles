@@ -1,6 +1,6 @@
 # clash
 
-maomao 的 clash 配置文件
+maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定义规则被覆盖）
 
 > 配置说明
 
@@ -13,6 +13,8 @@ maomao 的 clash 配置文件
    2. Windows: `Clash Verge`
 
 ### 使用注意
+
+当使用配置文件提示 `CloudConfig.yaml` 解析错误时，**请检查订阅链接是否已修改或是否可用**
 
 > 尽量新建配置文件进行修改
 
