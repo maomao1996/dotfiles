@@ -117,6 +117,7 @@ rule-providers:
 
 # 分流规则
 rules:
+  # 自定义规则
   - DOMAIN,g.gconf.link,DIRECT
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
@@ -162,16 +163,20 @@ rules:
   - PROCESS-NAME,transmission-qt.exe,DIRECT
   - PROCESS-NAME,uTorrent.exe,DIRECT
   - PROCESS-NAME,WebTorrent.exe,DIRECT
+
+  # clash-rules 规则
+  - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN,openai.com,PROXY
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
+  - RULE-SET,google,PROXY
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
   - RULE-SET,telegramcidr,PROXY
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
