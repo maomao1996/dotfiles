@@ -16,7 +16,7 @@ proxy-providers:
     url: https://example-url # clash 订阅链接
     interval: 3600
     # 过滤器（只允许使用含有该关键词的节点）
-    filter: '新加坡'
+    filter: '(?i)🇸🇬|新加坡|SG|Singapore'
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -118,7 +118,7 @@ rule-providers:
 # 分流规则
 rules:
   # 自定义规则
-  - DOMAIN,g.gconf.link,DIRECT
+  - DOMAIN,uk.microsub.org,DIRECT
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT
