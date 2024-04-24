@@ -8,9 +8,7 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
 2. 自行添加 `rules` 规则
 3. `rule-providers` 来自于 [clash-rules | GitHub](https://github.com/Loyalsoldier/clash-rules)
 4. 仅保留新加坡节点
-5. 客户端
-   1. Mac: `ClashX Pro`
-   2. Windows: `Clash Verge`
+5. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
 
 ### 使用注意
 
@@ -23,6 +21,10 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
    1. 先手动导入订阅地址
    2. 再将其生成的配置文件复制并重命名为 `CloudConfig.yaml`（也可直接重命名）
    3. 最后直接导入本规则即可使用
+
+### 转换链接方案
+
+使用转换链接方案可参考[Clash Verge 系列使用最佳实践](https://lainbo.com/article/clash-config)
 
 ## 相关链接
 
