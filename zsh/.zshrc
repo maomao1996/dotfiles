@@ -49,6 +49,7 @@ zinit ice svn
 zinit lucid wait="1" for \
     OMZL::clipboard.zsh \
     OMZL::completion.zsh \
+    OMZL::directories.zsh \
     OMZL::history.zsh \
     OMZL::key-bindings.zsh \
     OMZL::theme-and-appearance.zsh \
@@ -63,6 +64,8 @@ zinit snippet "https://github.com/maomao1996/dotfiles/blob/main/zsh/femm.plugin.
 #--------------------------------------------------#
 # 内置环境变量修改
 #--------------------------------------------------#
+HIST_STAMPS="yyyy-mm-dd"
+
 export LESS="-R"
 
 #--------------------------------------------------#
