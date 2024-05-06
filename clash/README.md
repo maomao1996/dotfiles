@@ -24,7 +24,9 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
 
 ### 转换链接方案
 
-使用转换链接方案可参考[Clash Verge 系列使用最佳实践](https://lainbo.com/article/clash-config)
+- [Lainbo 订阅转换](https://sub.lainbo.com/)
+
+详细说明可参考[Clash Verge 系列使用最佳实践](https://lainbo.com/article/clash-config)
 
 ## 相关链接
 
