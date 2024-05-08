@@ -6,7 +6,8 @@
 
 - 使用 [zinit](https://github.com/zdharma-continuum/zinit) 加载插件
 - `.zshrc` 为 zsh 配置文件
-- `femm.plugin.zsh` 为个人常用的配置插件（作为插件方便维护）
+- `.p10k.zsh` 为 p10k 配置文件
+- `femm.plugin.zsh` 为个人常用的配置（作为插件方便维护）
 
 ## 相关链接
 
