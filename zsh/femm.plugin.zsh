@@ -1,16 +1,21 @@
 #--------------------------------------------------#
 # alias 相关
 #--------------------------------------------------#
-# https://github.com/antfu/ni
+# pnpm
 alias p="pnpm"
 alias pnpx="pnpm dlx"
+
+# bun run 更快
 alias d="bun run dev"
 alias s="bun run start"
 alias b="bun run build"
 alias t="bun run test"
 alias dp="bun run deploy"
-alias lint="nr lint"
-alias lintf="nr lint --fix"
+alias lint="bun run lint"
+alias lintf="bun run lint --fix"
+
+# https://github.com/antfu-collective/ni
+alias nio="ni --prefer-offline"
 
 # git 相关
 alias glogp="git log --pretty='%C(yellow)%h%C(reset) %ad %C(green)%s%C(reset) %C(red)%d%C(reset) %C(bold blue)[%an]%C(reset)'"
@@ -22,6 +27,15 @@ alias dmm="git checkout master && git pull && git merge develop"
 # 包别名
 alias cat="bat"
 alias commit="czg"
+
+# IP
+alias ip="ipconfig getifaddr en0"
+alias cip="curl cip.cc"
+
+# 打开配置文件
+alias .zshrc="code $HOME/.zshrc"
+alias .p10k="code $HOME/.p10k.zsh"
+alias .hosts="code /etc/hosts"
 
 #--------------------------------------------------#
 # 目录相关
@@ -99,6 +113,7 @@ function unproxy() {
 #--------------------------------------------------#
 # 其他
 #--------------------------------------------------#
+# 复制当前项目名和分支名（方便提测）
 function c() {
   if [[ -d .git ]]; then
     local data="项目名: $(basename $PWD)\n分支名: $(git_current_branch)"
