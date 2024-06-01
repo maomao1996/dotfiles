@@ -1,4 +1,17 @@
 #--------------------------------------------------#
+# utils 相关
+#--------------------------------------------------#
+# 检查命令是否存在
+function check_command() {
+  ((${commands[$1]+1}))
+}
+
+# 在命令存在时才执行
+function safe_run() {
+  check_command "$1" && "$@"
+}
+
+#--------------------------------------------------#
 # alias 相关
 #--------------------------------------------------#
 # pnpm
@@ -24,13 +37,13 @@ alias gpp="proxy && git push && unproxy"
 alias glp="proxy && git pull && unproxy"
 alias dmm="git checkout master && git pull && git merge develop"
 
-# 包别名
-alias cat="bat"
-alias commit="czg"
-
 # IP
 alias ip="ipconfig getifaddr en0"
 alias cip="curl cip.cc"
+
+# 第三方工具
+alias commit="czg"
+check_command bat && alias cat="bat"
 
 # 打开配置文件
 alias .zshrc="code $HOME/.zshrc"
@@ -87,6 +100,22 @@ function cloneo() {
 }
 
 #--------------------------------------------------#
+# zinit 相关
+#--------------------------------------------------#
+# 更新 zinit 和所有插件
+function update() {
+  proxy
+
+  if [[ $1 == "femm" ]]; then
+    zinit update "https://github.com/maomao1996/dotfiles/blob/main/zsh/femm.plugin.zsh"
+  else
+    zinit self-update && zinit update --parallel --all
+  fi
+
+  unproxy
+}
+
+#--------------------------------------------------#
 # 代理相关
 #--------------------------------------------------#
 function proxy() {
@@ -128,3 +157,28 @@ function c() {
     echo "\033[33m当前目录不存在 .git 配置\033[0m"
   fi
 }
+
+# 修改 GitHub 用户名和邮箱地址（防止造成用公司信息提交到 github 的尴尬）
+if [[ -d .git && $githubRepoUser ]]; then
+  # 获取当前仓库和用户信息
+  local remoteUrl=$(git remote get-url origin)
+
+  # 判断是否为指定用户的 GitHub 仓库
+  if [[ $githubRepoUser && $remoteUrl =~ "/github.com/$githubRepoUser/" ]]; then
+    # 提示当前为 GitHub 项目（不需要可注释）
+    echo -e "\033[34m当前正在处理 GitHub 用户 ($githubRepoUser) 的项目\033[0m"
+
+    local currentName=$(git config user.name)
+    local currentEmail=$(git config user.email)
+
+    if [[ $githubUser && $githubUser != $currentName ]]; then
+      git config user.name "$githubUser"
+      echo -e "已将当前仓库的用户名从\033[33m $currentName \033[0m修改为\033[32m $githubUser \033[0m"
+    fi
+
+    if [[ $githubEmail && $githubEmail != $currentEmail ]]; then
+      git config user.email "$githubEmail"
+      echo -e "已将当前仓库的邮箱从\033[33m $currentEmail \033[0m修改为\033[32m $githubEmail \033[0m"
+    fi
+  fi
+fi
