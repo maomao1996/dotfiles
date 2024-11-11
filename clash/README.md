@@ -32,6 +32,8 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
 
 在默认情况下，Clash Verge 日志会一直保留在磁盘中，其会导致磁盘空间逐渐被占用，从而影响系统性能
 
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/53c7884a-fdf1-47be-a97b-33e424b55e13">
+
 **解决方案:**
 
 - 设置 Clash Verge 日志自动清理（默认不清理）
