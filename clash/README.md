@@ -28,6 +28,17 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
 
 详细说明可参考[Clash Verge 系列使用最佳实践](https://lainbo.com/article/clash-config)
 
+### Clash Verge 日志占用大量磁盘空间
+
+在默认情况下，Clash Verge 日志会一直保留在磁盘中，其会导致磁盘空间逐渐被占用，从而影响系统性能
+
+**解决方案:**
+
+- 设置 Clash Verge 日志自动清理（默认不清理）
+- 设置日志等级为 `warn` 或其他
+
+- [[BUG] 缩短日志最长保留时间](https://github.com/zzzgydi/clash-verge/issues/713)
+
 ## 相关链接
 
 - [Clash 知识库](https://clash.wiki/)
