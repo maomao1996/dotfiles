@@ -106,7 +106,13 @@ const baseOption = {
       TLS: { ports: [443, 8443] },
       HTTP: { ports: [80, '8080-8880'] }
     }
-  }
+  },
+  // GeoIP 数据模式
+  'geodata-mode': true,
+  // Geo 文件加载器
+  'geodata-loader': 'standard',
+  // Geo 自动更新
+  'geo-auto-update': true
 }
 
 const dnsOptions = {
@@ -145,6 +151,8 @@ function main(config) {
   return { ...config, ...baseOption }
 }
 ```
+
+- config 参数说明： <https://raw.githubusercontent.com/dongchengjie/meta-json-schema/refs/heads/main/schemas/clash-verge-merge-json-schema.json>
 
 ## 相关链接
 
