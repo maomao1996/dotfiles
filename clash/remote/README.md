@@ -54,6 +54,10 @@ maomao 的 clash 远程配置文件
 6. 点击 `转换`
 7. 将生成的链接用于更新订阅
 
+> 配置图
+
+<img width="773" alt="配置图" src="https://github.com/user-attachments/assets/50f7d152-93d9-413e-9835-40388c21064e">
+
 ### 扩展脚本设置
 
 1. 在订阅列表右键点击订阅
