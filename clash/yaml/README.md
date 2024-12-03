@@ -4,11 +4,12 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
 
 > 配置说明
 
-1. 使用 `proxy-providers` 自动更新订阅链接
-2. 自行添加 `rules` 规则
-3. `rule-providers` 来自于 [clash-rules | GitHub](https://github.com/Loyalsoldier/clash-rules)
-4. 仅保留新加坡节点
-5. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
+1. 白名单模式「**没有命中规则的网络流量，统统使用代理**」
+2. 使用 `proxy-providers` 自动更新订阅链接
+3. 自行添加 `rules` 规则
+4. `rule-providers` 来自于 [clash-rules | GitHub](https://github.com/Loyalsoldier/clash-rules)
+5. 仅保留新加坡节点
+6. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
 
 ### 使用注意
 
