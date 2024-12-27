@@ -39,6 +39,15 @@ maomao 的 clash 远程配置文件
 - `🇪🇺 欧洲负载`
 - `🎯 全球直连`
 
+## 配置文件
+
+- 默认配置 `config.ini`
+  - 1. `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/config.ini`
+  - 2. `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/config.ini`
+- 广告拦截专用（无代理功能） `adblock-no-proxy.ini`
+  - 1. `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/adblock-no-proxy.ini`
+  - 2. `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/adblock-no-proxy.ini`
+
 ## 使用
 
 1. 打开比较知名的转换网站
@@ -48,9 +57,7 @@ maomao 的 clash 远程配置文件
 2. 模式选择 `进阶模式`
 3. 订阅地址输入 `机场给的订阅链接`
 4. 客户端选择 `Clash`
-5. 将以下链接复制到 `远程配置文件` 中（出现的下拉框需要点击选中）
-   1. `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/config.ini`
-   2. `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/config.ini`
+5. 复制需要的[配置文件](#配置文件)，将其粘贴到 `远程配置文件` 中（出现的下拉框需要点击选中）
 6. 点击 `转换`
 7. 将生成的链接用于更新订阅
 
