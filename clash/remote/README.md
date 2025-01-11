@@ -17,6 +17,7 @@ maomao 的 clash 远程配置文件
 
 - `✈️ 节点选择`
 - `♻️ 自动选择`
+- `🕹 手动选择`
 - `🔮 负载均衡`
 - `🖥️ AI编程`
 - `🤖 AI专用`
@@ -48,6 +49,8 @@ maomao 的 clash 远程配置文件
   - 1. `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/adblock-no-proxy.ini`
   - 2. `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/adblock-no-proxy.ini`
 
+[配置文件字段说明 | subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+
 ## 使用
 
 1. 打开比较知名的转换网站
@@ -76,6 +79,7 @@ maomao 的 clash 远程配置文件
 const CUSTOM_RULES = [
   // '✈️ 节点选择'
   // '♻️ 自动选择'
+  // '🕹 手动选择'
   // '🔮 负载均衡'
   // '🖥️ AI编程'
   // '🤖 AI专用'
@@ -203,9 +207,10 @@ function main(config) {
 
 ## 相关链接
 
-- [ios_rule_script | GitHub](https://github.com/blackmatrix7/ios_rule_script)
-- [ACL4SSR | GitHub](https://github.com/ACL4SSR/ACL4SSR/tree/master)
-- [clash-rules | GitHub](https://github.com/Loyalsoldier/clash-rules)
+- [subconverter | GitHub](https://github.com/tindy2013/subconverter) 订阅转换
+- [ios_rule_script | GitHub](https://github.com/blackmatrix7/ios_rule_script) 规则脚本
+- [ACL4SSR | GitHub](https://github.com/ACL4SSR/ACL4SSR/tree/master) 规则集
+- [clash-rules | GitHub](https://github.com/Loyalsoldier/clash-rules) 规则集
 - [RemoteConfig - lainbo | GitHub](https://github.com/lainbo/gists-hub/tree/master/src/Clash/RemoteConfig)
 - [Custom_OpenClash_Rules | GitHub](https://github.com/Aethersailor/Custom_OpenClash_Rules)
 - [meta-rules-dat | GitHub](https://github.com/MetaCubeX/meta-rules-dat)
