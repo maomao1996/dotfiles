@@ -11,6 +11,8 @@ maomao 的 clash 配置文件（分开管理代理规则和订阅，防止自定
 5. 仅保留新加坡节点
 6. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
 
+推荐本人[自用机场](https://xn--clouds-o43k.com/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
+
 ### 使用注意
 
 当使用配置文件提示 `CloudConfig.yaml` 解析错误时，**请检查订阅链接是否已修改或是否可用（浏览器访问会下载 `yaml` 格式的文件）**

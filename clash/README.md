@@ -1,4 +1,4 @@
-# clash
+# Clash
 
 maomao 的 clash 配置文件
 
@@ -6,6 +6,8 @@ maomao 的 clash 配置文件
 
 - [远程配置文件 `remote.ini` (个人主要使用)](/clash/remote/)
 - [本地配置文件 `config.yaml`](/clash/yaml)
+
+推荐本人[自用机场](https://xn--clouds-o43k.com/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
 
 ## 添加自定义规则
 

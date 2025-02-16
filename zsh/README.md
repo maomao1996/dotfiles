@@ -1,4 +1,4 @@
-# dotfiles
+# Zsh
 
 茂茂的 zsh 配置文件
 

@@ -9,6 +9,8 @@ maomao 的 clash 远程配置文件
 3. 扩展脚本设置来添加自定义规则（防止被覆盖）
 4. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
 
+推荐本人[自用机场](https://xn--clouds-o43k.com/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
+
 ## 代理组
 
 > 名称后带 `自动` 的，会使用 `url-test` 自动选择最优节点
@@ -43,11 +45,11 @@ maomao 的 clash 远程配置文件
 ## 配置文件
 
 - 默认配置 `config.ini`
-  - 1. `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/config.ini`
-  - 2. `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/config.ini`
+  - `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/config.ini`
+  - `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/config.ini`
 - 广告拦截专用（无代理功能） `adblock-no-proxy.ini`
-  - 1. `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/adblock-no-proxy.ini`
-  - 2. `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/adblock-no-proxy.ini`
+  - `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/adblock-no-proxy.ini`
+  - `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/adblock-no-proxy.ini`
 
 [配置文件字段说明 | subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 
