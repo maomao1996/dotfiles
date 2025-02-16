@@ -1,0 +1,36 @@
+name: Update Clash Rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'
+
+permissions: write-all
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  update-clash-rules:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Run Script
+        run: npm run clash:update-direct-rules
+
+      - name: Commit And Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(clash): update direct rules by GitHub Actions'
+          file_pattern: 'clash/rule/direct.list'

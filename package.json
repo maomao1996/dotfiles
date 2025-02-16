@@ -1,0 +1,10 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "Mac config dotfiles for daily development or work",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clash:update-direct-rules": "node ./clash/scripts/update-direct-rules.js"
+  }
+}
