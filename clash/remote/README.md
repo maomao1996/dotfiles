@@ -56,9 +56,10 @@ maomao 的 clash 远程配置文件
 ## 使用
 
 1. 打开比较知名的转换网站
-   1. <https://suburl.v1.mk/>
-   2. <https://sub-web.netlify.app/>
-   3. <https://acl4ssr-sub.github.io/>
+   1. **<https://maomao1996.github.io/subconverter-web/> (茂茂自用的 clash 远程配置文件转换工具)**
+   2. <https://suburl.v1.mk/>
+   3. <https://sub-web.netlify.app/>
+   4. <https://acl4ssr-sub.github.io/>
 2. 模式选择 `进阶模式`
 3. 订阅地址输入 `机场给的订阅链接`
 4. 客户端选择 `Clash`
@@ -87,7 +88,6 @@ const CUSTOM_RULES = [
   // '🤖 AI专用'
   // '📲 Telegram'
   // '🕊️ Twitter(X)'
-  // '🍃 应用净化'
   // '🛡️ 广告拦截'
   // '🐟 漏网之鱼'
   // '🇭🇰 香港自动'
