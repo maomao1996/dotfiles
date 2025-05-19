@@ -9,7 +9,7 @@ maomao 的 clash 远程配置文件
 3. 扩展脚本设置来添加自定义规则（防止被覆盖）
 4. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
 
-推荐本人[自用机场](https://xn--clouds-o43k.com/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
+推荐本人[自用机场](https://xn--cloud-cl5i.net/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
 
 ## 代理组
 
