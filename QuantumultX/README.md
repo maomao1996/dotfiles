@@ -4,6 +4,10 @@ maomao 的 QuantumultX 配置文件
 
 推荐本人[自用机场](https://xn--clouds-o43k.com/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
 
+## 软件界面介绍
+
+![软件界面介绍](./introduce.webp)
+
 ## 使用配置
 
 1. 导入配置
