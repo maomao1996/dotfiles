@@ -121,22 +121,33 @@ function update() {
 }
 
 #--------------------------------------------------#
-# 代理相关
+# 代理相关（支持 HTTP 和 SOCKS5h 模式）
 #--------------------------------------------------#
 function proxy() {
-  local http="http://127.0.0.1:7890"
-  local socks5="socks5://127.0.0.1:7890"
+  local host="127.0.0.1"
+  local port="7890"
 
-  export http_proxy=$http
-  export HTTP_PROXY=$http
+  local http="http://$host:$port"
+  local socks5="socks5h://$host:$port"
 
-  export https_proxy=$http
-  export HTTPS_PROXY=$http
+  local mode
 
-  export all_proxy=$socks5
-  export ALL_PROXY=$socks5
+  if [[ "$1" == "socks" ]]; then
+    mode=$socks5
+    echo -e "\033[32m已开启终端代理 (SOCKS5h 模式)\033[0m"
+  else
+    mode=$http
+    echo -e "\033[32m已开启终端代理 (HTTP 模式)\033[0m"
+  fi
 
-  echo "\033[32m已开启终端代理\033[0m"
+  export http_proxy=$mode
+  export HTTP_PROXY=$mode
+
+  export https_proxy=$mode
+  export HTTPS_PROXY=$mode
+
+  export all_proxy=$mode
+  export ALL_PROXY=$mode
 }
 
 function unproxy() {
