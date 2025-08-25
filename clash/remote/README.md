@@ -11,7 +11,7 @@ maomao 的 clash 远程配置文件
 
 推荐本人[自用机场](https://xn--cloud-cl5i.net/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
 
-## 代理组
+## 分流和代理组
 
 > 名称后带 `自动` 的，会使用 `url-test` 自动选择最优节点
 >
@@ -21,6 +21,7 @@ maomao 的 clash 远程配置文件
 - `♻️ 自动选择`
 - `🕹 手动选择`
 - `🔮 负载均衡`
+- `🐙 GitHub`
 - `🖥️ AI编程`
 - `🤖 AI专用`
 - `📲 Telegram`
@@ -84,6 +85,7 @@ const CUSTOM_RULES = [
   // '♻️ 自动选择'
   // '🕹 手动选择'
   // '🔮 负载均衡'
+  // '🐙 GitHub'
   // '🖥️ AI编程'
   // '🤖 AI专用'
   // '📲 Telegram'
