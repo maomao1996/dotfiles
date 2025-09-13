@@ -24,9 +24,9 @@ maomao 的 clash 远程配置文件
 - `🐙 GitHub`
 - `🖥️ AI编程`
 - `🤖 AI专用`
+- `Ⓜ️ 微软服务`
 - `📲 Telegram`
 - `🕊️ Twitter(X)`
-- `🍃 应用净化`
 - `🛡️ 广告拦截`
 - `🐟 漏网之鱼`
 - `🇭🇰 香港自动`
@@ -88,6 +88,7 @@ const CUSTOM_RULES = [
   // '🐙 GitHub'
   // '🖥️ AI编程'
   // '🤖 AI专用'
+  // 'Ⓜ️ 微软服务'
   // '📲 Telegram'
   // '🕊️ Twitter(X)'
   // '🛡️ 广告拦截'
