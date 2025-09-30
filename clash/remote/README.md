@@ -7,7 +7,9 @@ maomao 的 clash 远程配置文件
 1. 白名单模式「**没有命中规则的网络流量，统统使用代理**」
 2. 加入常用代理组
 3. 扩展脚本设置来添加自定义规则（防止被覆盖）
-4. 客户端 [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
+4. 客户端推荐（目前主要使用 FlClash）
+   1. [FlClash](https://github.com/chen08209/FlClash) 基于 ClashMeta 的多平台代理客户端，简单易用
+   2. [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev) 基于 Tauri 的 ClashMeta 客户端
 
 推荐本人[自用机场](https://xn--cloud-cl5i.net/#/register?code=07YceqZM) 便宜量大稳定 10 元每月 1T 流量（已使用好几年）
 
