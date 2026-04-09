@@ -24,6 +24,7 @@ maomao 的 clash 远程配置文件
 - `🕹 手动选择`
 - `🔮 负载均衡`
 - `🐙 GitHub`
+- `🐧 L站社区`
 - `🖥️ Cursor`
 - `🤖 OpenAI`
 - `🤖 Claude`
@@ -85,6 +86,7 @@ const CUSTOM_RULES = [
   // '🕹 手动选择'
   // '🔮 负载均衡'
   // '🐙 GitHub'
+  // '🐧 L站社区'
   // '🖥️ Cursor'
   // '🤖 OpenAI'
   // '🤖 Claude'
