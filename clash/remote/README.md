@@ -31,6 +31,7 @@ maomao 的 clash 远程配置文件
 - `🤖 Gemini`
 - `🤖 其他AI`
 - `Ⓜ️ 微软服务`
+- `🍎 苹果代理`：命中 [AppleProxy.list](https://github.com/Coldvvater/Mononoke/blob/master/mihomo/Rules/AppleProxy.list) 的 Apple 服务走此分组；该规则优先于 Apple 直连规则。
 - `📲 Telegram`
 - `🕊️ Twitter(X)`
 - `🛡️ 广告拦截`
@@ -93,6 +94,7 @@ const CUSTOM_RULES = [
   // '🤖 Gemini'
   // '🤖 其他AI'
   // 'Ⓜ️ 微软服务'
+  // '🍎 苹果代理'
   // '📲 Telegram'
   // '🕊️ Twitter(X)'
   // '🛡️ 广告拦截'
