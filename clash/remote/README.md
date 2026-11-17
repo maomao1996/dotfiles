@@ -34,7 +34,7 @@ maomao 的 clash 远程配置文件
 - `🍎 苹果代理`：命中 [AppleProxy.list](https://github.com/Coldvvater/Mononoke/blob/master/mihomo/Rules/AppleProxy.list) 的 Apple 服务走此分组；该规则优先于 Apple 直连规则。
 - `📲 Telegram`
 - `🕊️ Twitter(X)`
-- `🛡️ 广告拦截`
+- `🛡️ 广告拦截`（广告合并规则仅在 `config-adblock.ini` 中启用）
 - `🐟 漏网之鱼`
 - `🇭🇰 香港自动`
 - `🇨🇳 台湾自动`
@@ -46,9 +46,12 @@ maomao 的 clash 远程配置文件
 
 ## 配置文件
 
-- 默认配置 `config.ini`
+- 默认配置（不含去广告合并规则） `config.ini`
   - `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/config.ini`
   - `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/config.ini`
+- 含去广告合并规则的配置 `config-adblock.ini`
+  - `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/config-adblock.ini`
+  - `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/config-adblock.ini`
 - 广告拦截专用（无代理功能） `adblock-no-proxy.ini`
   - `https://raw.githubusercontent.com/maomao1996/dotfiles/main/clash/remote/adblock-no-proxy.ini`
   - `https://jsdelivr.net/gh/maomao1996/dotfiles@main/clash/remote/adblock-no-proxy.ini`
